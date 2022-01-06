@@ -3,7 +3,7 @@ import { Fragment } from "react";
 import classes from "./Modal.module.css";
 import ReactDOM from "react-dom";
 const Backdrop = (props) => {
-  return <div className={classes.backdrop} />;
+  return <div className={classes.backdrop} onClick={props.onClick}/>;
 };
 
 const Overlay = (props) => {
@@ -15,10 +15,10 @@ const Overlay = (props) => {
 };
 
 const overlay = document.getElementById("cart-overlay");
-const Modal = () => {
+const Modal = (props) => {
   return (
     <Fragment>
-      {ReactDOM.createPortal(<Backdrop />, overlay)}
+      {ReactDOM.createPortal(<Backdrop onClick={props.onClick}/>, overlay)}
       {ReactDOM.createPortal(<Overlay>{props.children}</Overlay>, overlay)}
     </Fragment>
   );
