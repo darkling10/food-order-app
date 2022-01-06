@@ -1,4 +1,4 @@
-import classes from './MealsSummary.module.css';
+import classes from './MealsSumarry.module.css';
 
 const MealsSummary = () => {
   return (
