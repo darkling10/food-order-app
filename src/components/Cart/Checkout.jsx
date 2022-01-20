@@ -2,7 +2,7 @@ import classes from "./Checkout.module.css";
 import { useRef, useState } from "react";
 
 const isEmpty = (value) => value.trim() === "";
-const isFiveChars = (value) => value.trim().length === 5;
+const isFiveChars = (value) => value.trim().length === 6;
 
 const Checkout = (props) => {
   const nameRef = useRef();
@@ -43,6 +43,12 @@ const Checkout = (props) => {
     }
 
     console.log(nameValue);
+    props.onConfirm({
+      name:nameValue,
+      street:streetValue,
+      city:cityValue,
+      zipcode:zipValue
+    })
   };
 
   const nameControlClass = `${classes.control} ${
