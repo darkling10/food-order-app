@@ -9,12 +9,11 @@
 }
 
 .modal {
-  position:fixed;
+  position: absolute;
   top: 15vh;
   left: 5%;
   width: 90%;
-  /* max-height: 50vh; */
-  /* margin-bottom: 100px; */
+  height: auto;
   background-color: white;
   padding: 1rem;
   border-radius: 14px;
