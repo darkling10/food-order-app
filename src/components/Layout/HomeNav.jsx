@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import TargetLink from "../Links/TargetLink";
 import classes from "./HomeNav.module.css";
 
-const HomeNav = () => {
+const HomeNav = (props) => {
   return (
     <div className={classes.headtag}>
-      <TargetLink toPath='/products' name='Products'></TargetLink>
-      <TargetLink toPath='/about' name="About"></TargetLink>
+      {!props.inMenu && <TargetLink toPath='/products' name='Products'></TargetLink>}
+      {!props.inAbout && <TargetLink toPath='/about' name="About"></TargetLink>}
     </div>
   );
 };

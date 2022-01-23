@@ -10,8 +10,9 @@ const Header = (props) => {
     <Fragment>
       <header className={classes.header}>
         <h1 className={classes.logo}>Foodies</h1>
+        <HomeNav inMenu={props.inMenu || false} inAbout={props.inAbout || false}/>
         {props.showButton && <HeaderCartButton onClick={props.onClick}></HeaderCartButton>}
-        {!props.showButton && <HomeNav />}
+        {/* {!props.showButton && <HomeNav />} */}
       </header>
       <div className={classes["main-image"]}>
         <img src={mealbanner} alt="A table full of delicious food!" />

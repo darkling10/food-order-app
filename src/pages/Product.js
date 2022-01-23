@@ -13,7 +13,7 @@ const Product = () => {
   return (
     <CartProvider>
       {isVisible && <Cart onClick={cartVisiblityHandler}></Cart>}
-      <Header onClick={cartVisiblityHandler} showButton={true}></Header>
+      <Header onClick={cartVisiblityHandler} inMenu={true} showButton={true}></Header>
       <main>
         <Meals />
       </main>
