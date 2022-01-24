@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+
+
 .header {
   position: fixed;
   top: 0;
@@ -14,8 +18,17 @@
   z-index: 10;
 }
 
+
 .logo{
   margin-right: auto;
+  color:white;
+}
+.logo a{
+  margin-right: auto;
+  color:white;
+  text-decoration: none;
+  font-family:  'Sedgwick Ave', cursive;
+  font-size: 2.25rem;
 }
 
 .main-image {
