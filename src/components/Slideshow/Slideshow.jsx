@@ -16,18 +16,18 @@ const Slideshow = () => {
     <div>
       <Slide easing="ease">
         <div className={classes.eachslide}>
-          <div style={{ backgroundImage: `url(${slideImages[0]})` }}>
-            <span>Slide 1</span>
+          <div style={{ backgroundImage: `white` }}>
+            
           </div>
         </div>
         <div className={classes.eachslide}>
           <div style={{ backgroundImage: `url(${slideImages[1]})` }}>
-            <span>Slide 2</span>
+            
           </div>
         </div>
-        <div cclassName={classes.eachslide}>
+        <div className={classes.eachslide}>
           <div style={{ backgroundImage: `url(${slideImages[2]})` }}>
-            <span>Slide 3</span>
+            
           </div>
         </div>
       </Slide>
