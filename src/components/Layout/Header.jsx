@@ -15,9 +15,9 @@ const Header = (props) => {
         {props.showButton && <HeaderCartButton onClick={props.onClick}></HeaderCartButton>}
         {/* {!props.showButton && <HomeNav />} */}
       </header>
-      <div className={classes["main-image"]}>
+      {props.showBanner && <div className={classes["main-image"]}>
         <img src={mealbanner} alt="A table full of delicious food!" />
-      </div>
+      </div>}
     </Fragment>
   );
 };

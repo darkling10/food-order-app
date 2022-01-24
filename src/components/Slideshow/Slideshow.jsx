@@ -1,36 +1,35 @@
 import React from "react";
-import { Slide } from "react-slideshow-image";
-import classes from "./Slideshow.module.css";
+
 import {} from "../../assets/biryani.jpg";
 import "react-slideshow-image/dist/styles.css";
-import biryani from "./Images/biryani.jpg";
+import classes from "./Slideshow.module.css";
+import { Slide } from "react-slideshow-image";
 
 const slideImages = [
-  {
-    url: { biryani },
-    caption: "Slide 1",
-  },
-  {
-    url: { biryani },
-    caption: "Slide 2",
-  },
-  {
-    url: { biryani },
-    caption: "Slide 3",
-  },
+  "images/slide_2.jpg",
+  "images/slide_3.jpg",
+  "images/slide_4.jpg",
 ];
 
 const Slideshow = () => {
   return (
-    <div className="slide-container">
-      <Slide>
-        {slideImages.map((slideImage, index) => (
-          <div className={classes.eachslide} key={index}>
-            <div style={{ backgroundImage: `url(${slideImage.url})` }}>
-              <img src={slideImage.url} alt="Hiii"></img>
-            </div>
+    <div>
+      <Slide easing="ease">
+        <div className={classes.eachslide}>
+          <div style={{ backgroundImage: `url(${slideImages[0]})` }}>
+            <span>Slide 1</span>
           </div>
-        ))}
+        </div>
+        <div className={classes.eachslide}>
+          <div style={{ backgroundImage: `url(${slideImages[1]})` }}>
+            <span>Slide 2</span>
+          </div>
+        </div>
+        <div cclassName={classes.eachslide}>
+          <div style={{ backgroundImage: `url(${slideImages[2]})` }}>
+            <span>Slide 3</span>
+          </div>
+        </div>
       </Slide>
     </div>
   );

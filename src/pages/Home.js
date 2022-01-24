@@ -5,7 +5,7 @@ import Slideshow from "../components/Slideshow/Slideshow";
 const Home = () => {
   return (
     <Fragment>
-      <Header showButton={false} />
+      <Header showButton={false} showBanner={false}/>
       <main>
         <Slideshow></Slideshow>
       </main>
