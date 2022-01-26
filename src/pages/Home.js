@@ -1,13 +1,14 @@
 import React, { Fragment } from "react";
 import Header from "../components/Layout/Header";
+import HomeBody from "../components/HomeBody/HomeBody";
 
 const Home = () => {
   return (
     <Fragment>
       <Header showButton={false} showBanner={false}/>
-      <main>
-        
-      </main>
+      <section>
+        <HomeBody/>
+      </section>
     </Fragment>
   );
 };
