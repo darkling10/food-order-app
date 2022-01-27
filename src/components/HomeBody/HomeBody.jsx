@@ -1,11 +1,12 @@
 import React from "react";
 import classes from './HomeBody.module.css'
+import ExploreTab from "./ExploreTabs/ExploreTab";
+
 
 const HomeBody = () => {
   return (
     <div className={classes.container}>
-      <h2>This is my Foodies App</h2>
-      <p>I created import PropTypes from 'prop-types';</p>
+      <ExploreTab/>
     </div>
   );
 };

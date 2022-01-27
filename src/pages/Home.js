@@ -5,7 +5,7 @@ import HomeBody from "../components/HomeBody/HomeBody";
 const Home = () => {
   return (
     <Fragment>
-      <Header showButton={false} showBanner={false}/>
+      <Header showButton={false} showBanner={true}/>
       <section>
         <HomeBody/>
       </section>

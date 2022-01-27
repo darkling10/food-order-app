@@ -1,0 +1,18 @@
+.imgContainer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
+  /* width: 9.5rem; */
+  padding: 5px;
+  border-radius: 16px;
+}
+
+.imgItems {
+  /* padding: 1rem; */
+  width: 11em;
+  align-items: center;
+  margin: 2rem;
+  background-color: aliceblue;
+}
