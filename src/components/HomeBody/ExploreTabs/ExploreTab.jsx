@@ -7,15 +7,17 @@ import burger from "../../../assets/burger.jpg";
 
 const ExploreTab = (props) => {
   return (
-    <div className={classes.imgContainer}>
-      <div className={classes.imgItems}>
-        <ExploreItem toSpan="Want to Order" imgSrc={biryani} />
-      </div>
-      <div className={classes.imgItems}>
-        <ExploreItem toSpan="Want to Order" imgSrc={biryani} />
-      </div>
-      <div className={classes.imgItems}>
-        <ExploreItem toSpan="Want to Order" imgSrc={biryani} />
+    <div >
+      <div className={classes.imgContainer}>
+        <div className={classes.imgItems}>
+          <ExploreItem toSpan="Want to Order" imgSrc={biryani} />
+        </div>
+        <div className={classes.imgItems}>
+          <ExploreItem toSpan="Want to Order" imgSrc={biryani} />
+        </div>
+        <div className={classes.imgItems}>
+          <ExploreItem toSpan="Want to Order" imgSrc={biryani} />
+        </div>
       </div>
     </div>
   );
