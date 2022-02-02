@@ -15,5 +15,6 @@
   width: 11em;
   align-items: center;
   margin: 2rem;
+  border-radius: 16px;
   background-color: aliceblue;
 }

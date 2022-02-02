@@ -9,8 +9,14 @@
   border: 1px solid white;
   border-radius: 16px;
   align-items: center;
+  margin-left: 1.25rem;
+  margin-top: 1rem;
 }
 
 .itemContainer p {
   text-align: center;
+}
+
+.imgHolder {
+  align-items: center;
 }
